@@ -1,9 +1,132 @@
 /* 
 font-family: 'Shadows Into Light', 'Comic Sans MS', cursive;
-
-font-family: 'Open Sans', 'Arial', sans-serif;
 */
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 1920px;
   margin: 0 auto;
+}
+
+.header,
+.about,
+.portfolio,
+.footer {
+  height: 1080px;
+}
+
+/* HEADER */
+
+.header {
+  background: url(../img/background.jpg); 
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-menu {
+  font-size: 24px;
+  letter-spacing: 0.025em;
+  list-style: none;
+  width: 613px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-bottom: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 147px;
+}
+
+.header-menu a {
+  color: #f1f1f1;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 41px 0px;
+}
+
+.header-main {
+  width: 730px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header-logo {
+  position: relative;
+}
+
+.header-logo::after {
+  position: absolute;
+  content: 'TM';
+  font-size: 36px;
+  letter-spacing: 0.025em;
+  top: 0;
+  right: 0;
+}
+
+.header-title {
+  font-size: 60px;
+  letter-spacing: 0.025em;
+}
+
+.scroll-down {
+/*  display: inline-block;*/
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  position: relative;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 290px;
+  text-transform: uppercase;
+}
+
+.scroll-down::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  top: 50px;
+  left: 44%;
+  width: 32px;
+  height: 32px;
+}
+
+/* ABOUT ME */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  padding-left: 160px;
+  width: 775px;
+}
+
+.about-me {
+  width: 930px;
+  margin-left: 55px;
+}
+
+.about-me h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 120px;
+  font-weight: 400;
+}
+
+.scroll-about {
+  width: 515px;
+  color: #000000;
 }
