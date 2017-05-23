@@ -2,8 +2,24 @@
 font-family: 'Shadows Into Light', 'Comic Sans MS', cursive;
 */
 
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Light'), local('Nexa-Light'),
+  url('../fonts/Nexa Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Bold'), local('Nexa-Bold'),
+  url('../fonts/Nexa Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Nexa', 'Arial', sans-serif;
 }
 
 a {
@@ -37,7 +53,7 @@ a {
   width: 613px;
   text-transform: uppercase;
   margin: 0 auto;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   justify-content: space-between;
   margin-bottom: 147px;
@@ -81,13 +97,12 @@ a {
 }
 
 .scroll-down {
-/*  display: inline-block;*/
   font-size: 18px;
   letter-spacing: 0.1em;
   position: relative;
   color: #ffffff;
   margin: 0 auto;
-  width: 290px;
+  width: 302px;
   text-transform: uppercase;
 }
 
@@ -104,9 +119,16 @@ a {
 
 /* ABOUT ME */
 
-.about {
+.about-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.menu-about {
+  margin-bottom: 80px;
+  border-bottom: 1px solid #cccccc;
 }
 
 .about-img {
@@ -126,7 +148,54 @@ a {
   font-weight: 400;
 }
 
+.about-me p {
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.about-signature {
+  margin-top: 45px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 36px;
+  line-height: 50px;
+}
+
 .scroll-about {
   width: 515px;
   color: #000000;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  background-image: url(../img/background-portfolio.jpg);
+  background-repeat: no-repeat;
+}
+
+.menu-portfolio {
+  border-bottom: 1px solid #bebebe;
+}
+
+.portfolio-title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  width: 380px;
+  margin-top: -100px;
+}
+
+.portfolio-container {
+  padding: 0 165px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+margin: 20px 0;
 }
